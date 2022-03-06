@@ -1,0 +1,131 @@
+﻿
+
+@{
+	ViewData["Title"] = "Create";
+	Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h1>Create</h1>
+
+<div class="container">
+
+	<div class="row">
+		<div class="col-sm-12">
+			<h3>cargar compra</h3>
+		</div>
+
+	</div>
+	<div class="row">
+		<div class="col-sm-12">
+			<div class="col-md-4">
+
+			</div>
+			<div class="col-md-4">
+				<div class="form-group">
+					<label class="form-label">Proveedor</label>
+					<select name="idProveedor" asp-items="ViewBag.Proveedor" id="proveedor" class="form-control"></select>
+				</div>
+			</div>
+
+			<div class="col-md-3">
+				<div class="form-group">
+					<label class="form-label">Marcas</label>
+					<select name="idMarca" asp-items="ViewBag.Marcas" class="form-control" id="marcas"></select>
+				</div>
+			</div>
+			<div class="col-md-3">
+				<div class="form-group">
+					<label class="form-label">Categorias</label>
+					<select name="idCategoria" asp-items="ViewBag.Categorias" class="form-control" id="categorias"></select>
+				</div>
+			</div>
+
+			<div class="form-group">
+				<input type="submit" value="Crear Producto" class="btn btn-primary btnGuardar" id="btnGuardar" />
+			</div>
+		</div>
+
+	</div>
+
+
+
+
+	<div class="row">
+		<div class="col-md-3">
+			<div class="form-group">
+				<label class="form-label">Nombre Producto</label>
+				<input type="text" class="form-control" id="nombre" />
+				<span class="text-danger"></span>
+			</div>
+		</div>
+		<div class="col-md-3">
+			<div class="form-group">
+				<label class="form-label">Descripcion:</label>
+				<input type="text" class="form-control" id="descripcion" />
+				<span></span>
+			</div>
+		</div>
+	</div>
+	<div class="row">
+		<div class="col-md-4">
+			<div class="form-group">
+				<label class="form-label">Precio:</label>
+				<input class="form-control" id="precioProducto" />
+				<span class="text-danger"></span>
+			</div>
+		</div>
+		<div class="col-md-4">
+			<div class="form-group">
+				<label class="form-label">Stock:</label>
+				<input class="form-control" id="cantidad" />
+				<span></span>
+			</div>
+		</div>
+		<div class="col-md-4">
+			<div class="form-group">
+				<input class=" btn btn-primary mb-3" name="agregarProducto" value="agregar producto" type="button" id="agregarProducto" />
+			</div>
+			<div class="form-group">
+				<input class=" btn btn-primary mb-3" type="button" id="btnGuardar" name="guardar" value="guardar" />
+			</div>
+		</div>
+	</div>
+	<table class="table table-striped" id="tablaProducto">
+		<thead>
+			<tr>
+				<th>
+					<p>Nombre</p>
+				</th>
+				<th>
+					<p>Marca</p>
+				</th>
+				<th>
+					<p>Categoria</p>
+				</th>
+				<th>
+					<p>Descripcion</p>
+				</th>
+				<th>
+					<p>Precio</p>
+				</th>
+				<th>
+					<p>Cantidad</p>
+				</th>
+				<th>
+					<p>SubTotal</p>
+				</th>
+			</tr>
+		</thead>
+	</table>
+
+</div>
+	</div>
+
+@*Validacion lado cliente
+	@section Scripts{
+
+		@{
+			<partial name="_ValidationScriptsPartial" />
+		}
+	}*@
+

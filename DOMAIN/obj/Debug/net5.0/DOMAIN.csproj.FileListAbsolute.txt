@@ -1,0 +1,15 @@
+C:\Users\Pablo\source\repos\Store-Gaming\DOMAIN\bin\Debug\net5.0\DOMAIN.deps.json
+C:\Users\Pablo\source\repos\Store-Gaming\DOMAIN\bin\Debug\net5.0\DOMAIN.dll
+C:\Users\Pablo\source\repos\Store-Gaming\DOMAIN\bin\Debug\net5.0\ref\DOMAIN.dll
+C:\Users\Pablo\source\repos\Store-Gaming\DOMAIN\bin\Debug\net5.0\DOMAIN.pdb
+C:\Users\Pablo\source\repos\Store-Gaming\DOMAIN\obj\Debug\net5.0\DOMAIN.csproj.AssemblyReference.cache
+C:\Users\Pablo\source\repos\Store-Gaming\DOMAIN\obj\Debug\net5.0\DOMAIN.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Pablo\source\repos\Store-Gaming\DOMAIN\obj\Debug\net5.0\DOMAIN.AssemblyInfoInputs.cache
+C:\Users\Pablo\source\repos\Store-Gaming\DOMAIN\obj\Debug\net5.0\DOMAIN.AssemblyInfo.cs
+C:\Users\Pablo\source\repos\Store-Gaming\DOMAIN\obj\Debug\net5.0\DOMAIN.csproj.CoreCompileInputs.cache
+C:\Users\Pablo\source\repos\Store-Gaming\DOMAIN\obj\Debug\net5.0\DOMAIN.dll
+C:\Users\Pablo\source\repos\Store-Gaming\DOMAIN\obj\Debug\net5.0\ref\DOMAIN.dll
+C:\Users\Pablo\source\repos\Store-Gaming\DOMAIN\obj\Debug\net5.0\DOMAIN.pdb
+C:\Users\Pablo\source\repos\Store-Gaming\DOMAIN\bin\Debug\net5.0\DATA.dll
+C:\Users\Pablo\source\repos\Store-Gaming\DOMAIN\bin\Debug\net5.0\DATA.pdb
+C:\Users\Pablo\source\repos\Store-Gaming\DOMAIN\obj\Debug\net5.0\DOMAIN.csproj.CopyComplete

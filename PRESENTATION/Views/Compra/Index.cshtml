@@ -1,0 +1,64 @@
+﻿@model IEnumerable<DOMAIN.Models.CompraDomain>
+@{
+	ViewData["Title"] = "Compras";
+	Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<div class="container">
+	@if (TempData["mensaje"] != null)
+	{
+		<div class="alert alert-warning alert-dismissible fade show" role="alert">
+			@TempData["mensaje"]
+			<button type="button" class="close" data-dismiss="alert" arial-label="Close">
+				<span aria-hidden="true">&times;</span>
+			</button>
+		</div>
+	}
+	<div class="row">
+		<div class="col-sm-6">
+			<h3>Lista de Productos</h3>
+		</div>
+		<div class="col-sm-6">
+			<a class="btn btn-success d-block" asp-action="Create" asp-controller="Compra">Registrar Compra</a>
+		</div>
+	</div>
+
+	<div class="row">
+		@if (Model.Count() > 0)
+		{
+			<table class="table table-bordered table-striped">
+				<thead>
+					<tr>
+						<td>ID Compra</td>
+						<td>Fecha de la compra</td>
+						<td>Proveedor</td>
+						<td>Total</td>
+
+					</tr>
+				</thead>
+				<tbody>
+					@foreach (var item in Model)
+					{
+						<tr>
+							<td>@item.idCompra</td>
+							<td>@item.fechaCompra</td>
+							<td>@item.ProveedorName</td>
+							<td>@item.montoTotal</td>
+							<td>Acciones</td>
+							<td>
+								<a asp-controller="ComprasViewModel" asp-action="Create" class="btn btn-warning">Cargar Compra</a>
+
+								<a href="@Url.Action("Index", "ComprasDetalle", new { idCompra = @item.idCompra })" class="btn btn-warning">Detalle</a>
+
+							</td>
+						</tr>
+					}
+				</tbody>
+			</table>
+		}
+		else
+		{
+			<p>No hay registros</p>
+		}
+	</div>
+</div>
